@@ -5,28 +5,31 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(207, 214, 209);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
     text-align: center;
 }
 
 #container{
      
-        max-width: 1024px;
-        margin: 0 auto;
+    max-width: 1024px;
+    margin: 0 auto;
     
 }
 nav {
-    display: block;
-    background-color: blue;
+
+    background-color: rgb(103, 103, 180);
     color: aliceblue;
     font-size: 20px;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    column-gap: 20px;
 }
 
 nav ul li {
@@ -35,29 +38,28 @@ nav ul li {
     display: inline-block;
 }
 
-ul{
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+main{
+    background-color: aliceblue;
 }
 
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+h1 {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(103, 103, 180);
 }
 
 .produtos {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.produto{
+    margin-bottom: 20px;
 }
 
 .produto p{
-    background-color: blue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(103, 103, 180);
     color: antiquewhite;
     padding: 5px 10px;
 }
