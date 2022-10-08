@@ -19,23 +19,25 @@ header {
     margin: 0 auto;
     
 }
-nav {
 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(103, 103, 180);
     color: aliceblue;
     font-size: 20px;
+    list-style-type: none; 
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    column-gap: 20px;
-}
-
-nav ul li {
+.menu__item {
     color: #ecedea;
     border-right: 1px solid #d4e4ef;
-    display: inline-block;
+    display: block;
+    flex: 1 1 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
 }
 
 main{
@@ -52,6 +54,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .produto{
@@ -62,4 +65,5 @@ h1 {
     background-color: rgb(103, 103, 180);
     color: antiquewhite;
     padding: 5px 10px;
+    text-align: center;
 }
